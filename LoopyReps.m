@@ -221,9 +221,9 @@ intDivReps = {
 (* A0 Integral - Divergence only *)
 A0[m12_]:>m12/eUV+A0Fin[m12]/;zeroChecks[{m12}],
 
-(***********************************)
+(************************************)
 (* B0i integrals - Divergences only *)
-(***********************************)
+(************************************)
 
 (* Scaleless *)
 B0i[bb0,0,0,0]->1/eUV-1/eIR, (* Double checked *)
@@ -241,7 +241,7 @@ B0i[dbb00,p12_,0,0]:>-(1/(12eUV))+B0iFin[dbb00,p12,0,0]/;zeroChecks[{p12}], (* D
 B0i[dbb11,p12_,0,0]:>B0iFin[dbb11,p12,0,0]/;zeroChecks[{p12}],
 
 (* Note: FormCalc automatically replaces the bb0 and dbb0 integrals with only one *)
-(* non-zero mass, by the same integral with the mass at the end argument. *)
+(* non-zero mass, by the same integral with the mass at the end argument (due to symmetry). *)
 (* Therefore these will be picked up later *)
 (*B0i[bb0,0,m12_,0]:>WARNING/;zeroChecks[{m12}],*)
 B0i[bb1,0,m12_,0]:>WARNING/;zeroChecks[{m12}],
