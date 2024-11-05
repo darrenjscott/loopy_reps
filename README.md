@@ -9,6 +9,12 @@ At its heart it is just a set of replacements I found useful at times in my rese
 
 ## Usage
 ### LoopyReps.m
+#### To use ("installation")
+Should be loaded after `FormCalc`.
+
+``>>FormCalc` ``  
+``>>LoopyReps` ``
+
 #### Useful functions
 
 This file simply contains a bunch (*incomplete*) of integral replacements for the integrals which `FormCalc` spits out in one-loop calculations.
